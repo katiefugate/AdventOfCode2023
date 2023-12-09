@@ -2,8 +2,7 @@ let fs = require('fs');
 
 
 function part1() {
-    let array = fs.readFileSync('datap1.txt').toString().split("\n");
-    let data = array.filter(item => item !== '');
+    let data = fs.readFileSync('datap1.txt').toString().split("\n").filter(item => item !== '');
 
     let total = 0;
     data.forEach(line => {
@@ -16,8 +15,7 @@ function part1() {
 }
 
 function part2() {
-    let array = fs.readFileSync('datap2.txt').toString().split("\n");
-    let data = array.filter(item => item !== '');
+    let data = fs.readFileSync('datap2.txt').toString().split("\n").filter(item => item !== '');
     let spelledNumbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     let total = 0;
 
